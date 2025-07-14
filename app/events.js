@@ -1,3 +1,4 @@
+import { loadCss } from '../utils/loadCss.js';
 import { get } from "./requests.js";
 
 function render() {}
