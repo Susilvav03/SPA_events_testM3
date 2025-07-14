@@ -11,24 +11,30 @@ function afterRender() {
             e.preventDefault();
 
             const formData = new FormData(registerForm);
-
             let data = {}
-
+            
             for (const [key, value] of formData.entries()) {
                 data[key] = value;
             }
+            let email = data.email
 
             if (!data.email.trim() || !data.password.trim() || !data.name.trim()) {
                 alert("Hay campos vacíos");
                 return;
             }
 
-            const emailFetch = await fetch(`http://localhost:3000/users?email=${data.email}`);
+            const emailFetch = await fetch(`http://localhost:3000/users?email=${email}`);
             const emailResponse = await emailFetch.json();
 
             if (emailResponse.length > 0) {
                 alert("Correo ya registrado");
                 return;
+            }
+            
+            if (email.includes('@riwi.io') ) {
+                data["role"] = "Admin";
+            } else {
+                data["role"] = "Visitor";
             }
 
 

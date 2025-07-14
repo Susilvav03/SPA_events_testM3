@@ -3,25 +3,46 @@
     {
       "name": "Susana Silva Vallejo",
       "email": "susana@riwi.io",
-      "username": "Susan2003",
       "password": "123",
-      "role": "admin",
+      "role": "Admin",
       "id": "1"
     },
     {
       "name": "Mateo Zapata Vallejo",
       "email": "mateo@gmail.com",
-      "username": "mazapatava",
       "password": "123",
-      "role": "visitor",
+      "role": "Visitor",
       "id": "2"
     },
     {
       "name": "Sulderi Vallejo Cano",
       "email": "sulderi@riwi.io",
       "password": "123",
+      "role": "Admin",
       "id": "4joN_66"
+    },
+    {
+      "name": "Mateo version admin",
+      "email": "mateo@riwi.io",
+      "password": "123",
+      "role": "Admin",
+      "id": "gGugFPK"
     }
   ],
-  "events": []
+  "events": [
+    {
+      "name": "Halloween",
+      "description": "Lorem usmum lorem imsum lorem imsum<",
+      "Capacity": "123",
+      "Date": "31-10-25",
+      "id": "2"
+    },
+    {
+      "name": "Xmas",
+      "description": "Lorem usmum lorem imsum lorem imsum<",
+      "Capacity": "100",
+      "Date": "35-12-25",
+      "id": "4"
+    }
+  ]
 }
