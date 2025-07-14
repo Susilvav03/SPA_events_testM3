@@ -1,0 +1,20 @@
+{
+    "users" : [
+    {
+      "name": "Susana Silva Vallejo",
+      "email": "susana@riwi.io",
+      "username": "Susan2003",
+      "password": "123",
+      "role" : "admin",
+      "id": "1"
+    },
+    {
+      "name": "Mateo Zapata Vallejo",
+      "email": "mateo@gmail.com",
+      "username": "mazapatava",
+      "password": "123",
+      "role" : "visitor",
+      "id": "2"
+    }
+    ]
+}

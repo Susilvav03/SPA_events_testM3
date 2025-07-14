@@ -1,5 +1,5 @@
 {
-  "name": "project-root",
+  "name": "susanasilvavallejo913",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "dev": "vite"
   },
   "keywords": [],
-  "author": "",
+  "author": "Susana Silva Vallejo",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
