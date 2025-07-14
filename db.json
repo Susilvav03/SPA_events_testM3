@@ -1,11 +1,11 @@
 {
-    "users" : [
+  "users": [
     {
       "name": "Susana Silva Vallejo",
       "email": "susana@riwi.io",
       "username": "Susan2003",
       "password": "123",
-      "role" : "admin",
+      "role": "admin",
       "id": "1"
     },
     {
@@ -13,10 +13,15 @@
       "email": "mateo@gmail.com",
       "username": "mazapatava",
       "password": "123",
-      "role" : "visitor",
+      "role": "visitor",
       "id": "2"
+    },
+    {
+      "name": "Sulderi Vallejo Cano",
+      "email": "sulderi@riwi.io",
+      "password": "123",
+      "id": "4joN_66"
     }
-    ],
-
-    "events" : []
+  ],
+  "events": []
 }

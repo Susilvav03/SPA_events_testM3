@@ -15,7 +15,7 @@ function afterRender() {
       for (const [key, value] of formData.entries()) {
        data[key] = value;
       }
-      console.log(formData.entries());
+      
       if (!data.email || !data.password) {
         alert("Hay campos vacíos");
         return;
