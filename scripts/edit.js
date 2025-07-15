@@ -103,8 +103,8 @@ export function afterRender() {
                 data[key] = value;
             }
 
-            if (!data.title.trim()) {
-                alert('Ponle un titulo a la nota.');
+            if (!data.name.trim()) {
+                alert('You can not leave the event without name');
                 return;
             }
 
@@ -119,7 +119,7 @@ export function afterRender() {
     if (deleteEvent) {
         deleteEvent.addEventListener('click', (e) => {
             e.preventDefault();
-            const val = confirm('¿Estas seguro de que deseas eliminar la nota?')
+            const val = confirm('Are you sure you wan to delete the event?')
 
             if (val) {
                 remove('events', id);

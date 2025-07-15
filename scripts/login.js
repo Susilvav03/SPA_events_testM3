@@ -47,7 +47,7 @@ export function afterRender() {
       }
 
       if (!data.email || !data.password) {
-        alert("Hay campos vacíos");
+        alert("There are blank spaces");
         return;
       }
 
@@ -61,10 +61,10 @@ export function afterRender() {
           sessionStorage.setItem('session', JSON.stringify(emailResponse[0]));
           window.location.href = '#/dashboard';
         } else {
-          alert("Correo, usuario o contraseña incorrectos");
+          alert("Email or Password are incorrect");
         }
       } else {
-        alert("Correo, usuario o contraseña incorrectos");
+        alert("Email or Password are incorrect");
       }
     });
   }

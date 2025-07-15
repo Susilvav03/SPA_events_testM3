@@ -46,7 +46,7 @@ export function afterRender() {
             }
 
             if (!data.email.trim() || !data.password.trim() || !data.name.trim()) {
-                alert("Hay campos vacíos");
+                alert("There are blank spaces");
                 return;
             }
 
@@ -54,7 +54,7 @@ export function afterRender() {
             const emailResponse = await emailFetch.json();
 
             if (emailResponse.length > 0) {
-                alert("Correo ya registrado");
+                alert("Email is already registered");
                 return;
             }
 
