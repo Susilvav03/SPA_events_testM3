@@ -1,12 +1,12 @@
-import { auth } from './authorization.js';
+// router.js
+import { auth } from './services/auth.js';
 
 const routes = {
-  '/dashboard': () => import('./app/events.js'),
-  '/login': () => import('./app/login.js'),
-  '/register': () => import('./app/register.js'),
-  '/dashboard/events/enrollments': () => import('./app/enroll.js'),
-  '/dashboard/events/create': () => import('./app/create.js'),
-  '/dashboard/events/edit': () => import('./app/edit.js')
+  '/': () => import('./scripts/login.js'),
+  '/register': () => import('./scripts/register.js'),
+  '/dashboard': () => import('./scripts/events.js'),
+  '/dashboard/events/create': () => import('./scripts/create.js'),
+  '/dashboard/events/edit': () => import('./scripts/edit.js')
 };
 
 export async function renderRoute(hash, app) {
