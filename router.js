@@ -6,7 +6,8 @@ const routes = {
   '/register': () => import('./scripts/register.js'),
   '/dashboard': () => import('./scripts/events.js'),
   '/dashboard/events/create': () => import('./scripts/create.js'),
-  '/dashboard/events/edit': () => import('./scripts/edit.js')
+  '/dashboard/events/edit': () => import('./scripts/edit.js'),
+  '/dashboard/events/enroll': () => import('./scripts/enroll.js')
 };
 
 export async function renderRoute(hash, app) {

@@ -91,19 +91,10 @@ export function afterRender() {
                 <td> ${event.description} </td>
                 <td> ${event.capacity} </td>
                 <td> ${event.date} </td>
-                <td>`
-
-                if (role === "Admin") {
-                    html += `<a class="btn btn-purple" id="${event.id} edit-event" href="#">Edit</a>
+                <td><button class="enroll btn btn-purple ">unenroll</button>
                     </td>
                     `
-                    const newEvent = document.getElementById('button-new')
-                    newEvent.innerHTML = "ADD NEW EVENT"
-                } else {
-                    html += `<button class="enroll btn btn-purple ">Enroll</button>
-                    </td>
-                    `
-                }
+                
                 cardEvent.innerHTML = html;
                 
                 events.appendChild(cardEvent);
@@ -111,33 +102,4 @@ export function afterRender() {
         });
     }
 
-    
-
-    function manageEvents(data, user) {
-        const newEvent = document.getElementById('button-new')
-        const enroll = document.getElementById('enroll')
-        const edit = document.getElementById('edit-event')
-
-        if (user.role=='Visitor') {
-          enroll.addEventListener('click', (e) => {
-              e.preventDefault();
-                window.location.href = '#/dashboard/events/enroll';
-            })
-        }
-
-        if (user.role=='Admin') {
-            newEvent.addEventListener('click', (e) => {
-              e.preventDefault();
-                window.location.href = '#/dashboard/events/create';
-            })
-            edit.addEventListener('click', (e) => {
-              e.preventDefault();
-                const id = edit.target.id
-                sessionStorage.setItem('eventAccess', JSON.stringify({ "id": id}));
-                window.location.href = '#/dashboard/events/edit';
-            })
-
-        }
-    }
-    renderPage();
 }
