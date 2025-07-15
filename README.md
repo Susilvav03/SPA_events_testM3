@@ -1,12 +1,12 @@
-# CrudNote
+# Events management
 
-CrudNote es una aplicación web tipo SPA (Single Page Application) para la gestión de notas personales, con funcionalidades de autenticación, registro de usuarios y compartición de notas con diferentes permisos. El proyecto está desarrollado en JavaScript puro y utiliza un archivo JSON como base de datos simulada.
+Es una aplicación web tipo SPA (Single Page Application) para la gestión de eventos, con funcionalidades de autenticación, registro de usuarios y enrollment a eventos o creación, edición y eliminación de los mismos. El proyecto está desarrollado en JavaScript puro y utiliza un archivo JSON como base de datos simulada.
 
 ## Características principales
 
-- **Registro y autenticación de usuarios**: Permite a los usuarios crear una cuenta y acceder mediante login.
-- **Gestión de notas**: Los usuarios pueden crear, editar, eliminar y visualizar sus notas personales.
-- **Compartir notas**: Es posible compartir notas con otros usuarios, asignando permisos de lectura o edición.
+- **Registro y autenticación de usuarios**: Permite a los usuarios crear una cuenta y acceder mediante login, con rol de admin si es un correo con dominio @riwi.io.
+- **Gestión de eventos**: Los administradores pueden crear, editar y eliminar eventos.
+- **Enrolamiento de eventos**: Es posible enrolarse a eventos con perfil de visitante.
 - **SPA (Single Page Application)**: Navegación fluida entre páginas sin recargar el navegador, gracias al enrutador implementado.
 - **Interfaz moderna**: Utiliza Bootstrap para una apariencia atractiva y responsiva.
 
@@ -22,15 +22,12 @@ services/auth.js       # Lógica de autenticación
 utils/loadCss.js       # Utilidad para cargar CSS dinámicamente
 ```
 
-### Carpetas adicionales
-- **viejo/**: Contiene versiones anteriores y código comentado para referencia o pruebas.
-
 ## Instalación y ejecución
 
 
 1. **Clona el repositorio**
    ```
-   git clone https://github.com/EmmanuelRendon01/CrudNote.git
+   https://github.com/Susilvav03/SPA_events_testM3.git
    ```
 2. **Abre el proyecto en VS Code o tu editor favorito.**
 3. **Simula la API REST con JSON Server (opcional pero recomendado)**:
@@ -48,14 +45,12 @@ utils/loadCss.js       # Utilidad para cargar CSS dinámicamente
 ## Uso
 
 - Al abrir la aplicación, puedes registrarte o iniciar sesión.
-- Una vez autenticado, accedes al dashboard donde puedes gestionar tus notas.
-- Puedes compartir notas con otros usuarios y asignarles permisos.
+- Una vez autenticado, accedes al dashboard donde puedes gestionar los eventos.
 - La navegación entre páginas es instantánea gracias al enrutador SPA.
 
 ## Base de datos
 
-
-El archivo `db.json` simula la base de datos, almacenando usuarios y notas. Cada nota puede ser compartida con otros usuarios, especificando el tipo de permiso (`read` o `edit`).
+El archivo `db.json` simula la base de datos, almacenando usuarios y eventos, especificando el tipo de rol de cada usuario (`Admin` o `Visitor`).
 Además, usando [JSON Server](https://github.com/typicode/json-server) puedes convertir este archivo en una API RESTful local, facilitando el desarrollo y pruebas de las funcionalidades CRUD de la aplicación.
 
 ## Tecnologías utilizadas
@@ -64,18 +59,11 @@ Además, usando [JSON Server](https://github.com/typicode/json-server) puedes co
 - **HTML5**
 - **CSS3** (Bootstrap)
 
-## Estructura de archivos clave
-
-- `index.html`: Entrada principal de la aplicación.
-- `router.js`: Controla la navegación SPA.
-- `db.json`: Simula la base de datos.
-- `scripts/`: Lógica de cada página y funcionalidad.
-- `assets/styles/`: Estilos CSS personalizados.
-- `services/auth.js`: Autenticación y control de acceso.
-
 ## Autor
 
 - Susana Silva Vallejo
+- Clan: Ritchie
+- CC: 1001685913
 
 ## Licencia
 
